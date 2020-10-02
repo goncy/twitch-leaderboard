@@ -1,0 +1,11 @@
+#board {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: white;
+}
+
+#board li {
+  padding-left: 5px;
+}

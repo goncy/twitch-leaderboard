@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "name": "player"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "uid"
+    },
+    "points": {
+      "type": "integer"
+    }
+  }
+}

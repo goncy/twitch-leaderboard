@@ -1,0 +1,17 @@
+{
+  "name": "pokency-twitch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "lerna run develop --parallel --stream"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "lerna": "^3.22.1"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}
