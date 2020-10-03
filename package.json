@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "start": "lerna run develop --parallel --stream"
+    "start": "lerna run develop --stream"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",

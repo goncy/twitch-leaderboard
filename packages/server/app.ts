@@ -18,9 +18,13 @@ const client = tmi.client({
 });
 
 async function sync() {
-  players = await axios.get(`${API_URL}/players`).then((res) => res.data);
+  try {
+    players = await axios.get(`${API_URL}/players`).then((res) => res.data);
 
-  server.emit("players", players);
+    server.emit("players", players);
+  } catch (error) {
+    setTimeout(sync, 10000);
+  }
 }
 
 server.on("connection", (socket) => socket.emit("players", players));

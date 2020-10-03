@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "develop": "parcel index.html"
+    "develop": "parcel index.html --port=4444"
   },
   "dependencies": {
     "react": "^16.13.1",
